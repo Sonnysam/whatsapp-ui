@@ -1,12 +1,56 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
+import tw from "twrnc";
+import Colors from "../constants/Colors";
+import { Feather } from "@expo/vector-icons";
+import { Entypo } from "@expo/vector-icons";
 
 export default function Home() {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <>
+      <View style={styles.container}>
+        <View style={styles.items}>
+          <View>
+            <Text style={styles.text}>WhatsApp</Text>
+          </View>
+          <View style={styles.icons}>
+            <Feather
+              name="camera"
+              size={20}
+              color="white"
+              style={{ marginRight: 12 }}
+            />
+            <Feather
+              name="search"
+              size={20}
+              color="white"
+              style={{ marginRight: 12 }}
+            />
+            <Entypo name="dots-three-vertical" size={20} color="white" />
+          </View>
+        </View>
+      </View>
+    </>
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    minHeight: "15%",
+    backgroundColor: Colors.primary,
+  },
+  items: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginTop: "15%",
+    marginHorizontal: 5,
+  },
+  text: {
+    fontSize: 20,
+    fontWeight: "bold",
+    color: Colors.white,
+  },
+  icons: {
+    flexDirection: "row",
+  },
+});
