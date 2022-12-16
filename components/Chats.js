@@ -10,7 +10,6 @@ import React, { useEffect } from "react";
 import data from "../Data/Data";
 
 const WIDTH = Dimensions.get("window").width;
-const HEIGHT = Dimensions.get("window").height;
 
 export default function Chats() {
   // useEffect(() => {
