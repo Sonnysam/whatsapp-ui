@@ -19,9 +19,9 @@ export default function MyTabs() {
         },
       }}
     >
-      <Tab.Screen name="Calls" component={Calls} />
-      <Tab.Screen name="Status" component={Status} />
       <Tab.Screen name="Chats" component={Chats} />
+      <Tab.Screen name="Status" component={Status} />
+      <Tab.Screen name="Calls" component={Calls} />
     </Tab.Navigator>
   );
 }

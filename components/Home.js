@@ -36,17 +36,17 @@ export default function Home() {
 
 const styles = StyleSheet.create({
   container: {
-    minHeight: "15%",
+    minHeight: "12%",
     backgroundColor: Colors.primary,
   },
   items: {
     flexDirection: "row",
     justifyContent: "space-between",
-    marginTop: "15%",
-    marginHorizontal: 5,
+    marginTop: "12%",
+    marginHorizontal: 15,
   },
   text: {
-    fontSize: 20,
+    fontSize: 25,
     fontWeight: "bold",
     color: Colors.white,
   },
