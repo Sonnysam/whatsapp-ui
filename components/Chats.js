@@ -96,5 +96,6 @@ const styles = StyleSheet.create({
   msg: {
     color: Colors.grey,
     fontSize: 15,
+    marginLeft: 5,
   },
 });
